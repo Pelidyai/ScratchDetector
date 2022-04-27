@@ -1,0 +1,15 @@
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector.csprojAssemblyReference.cache
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\MainWindow.g.cs
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\App.g.cs
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector_MarkupCompile.cache
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector_MarkupCompile.lref
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\bin\Debug\ScratchDetector.exe
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\bin\Debug\ScratchDetector.pdb
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\MainWindow.baml
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector.g.resources
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector.Properties.Resources.resources
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector.csproj.GenerateResource.cache
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector.csproj.CoreCompileInputs.cache
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector.exe
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\ScratchDetector.pdb
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\bin\Debug\ScratchDetector.exe.config
