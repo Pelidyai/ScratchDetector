@@ -132,7 +132,10 @@ namespace ScratchDetector
             FileInfo f = new FileInfo(Im);
             BitmapImage bi3 = new BitmapImage();
             bi3.BeginInit();
-            bi3.UriSource = new Uri(System.IO.Directory.GetCurrentDirectory() + "\\out_img\\" + f.Name, UriKind.Absolute);
+            if(!(bool)isCont.IsChecked)
+                bi3.UriSource = new Uri(System.IO.Directory.GetCurrentDirectory() + "\\out_img\\" + f.Name, UriKind.Absolute);
+            else 
+                bi3.UriSource = new Uri(System.IO.Directory.GetCurrentDirectory() + "\\countours_img\\" + f.Name, UriKind.Absolute);
             bi3.EndInit();
             AfterIm.Source = bi3;
             if (errors != "" && !errors.Contains("WARN"))
@@ -190,6 +193,12 @@ namespace ScratchDetector
         private void ProcessButton_Click(object sender, RoutedEventArgs e)
         {
             //Console.WriteLine("butt");
+            Im = buf;
+            if(UrlTextBox.Text==""|| UrlTextBox.Text == "Абсолютный путь до изображения")
+            {
+                ErrorLabel.Content = "Изображение не выбрано.";
+                return;
+            }
             StatusChange.ProgressChanged += new ProgressChangedEventHandler(StatusChanged_ProgressChanged);
             if (CollectData.IsBusy != true)
             {
@@ -215,19 +224,35 @@ namespace ScratchDetector
 
             //Console.WriteLine("tik");
         }
-
+        string buf = "";
         private void Observe_Click(object sender, RoutedEventArgs e)
         {
             openFileDialog.Filter = "Изображение|*.jpg; *.png; *.bmp";
             if (openFileDialog.ShowDialog().Value)
             {
                 UrlTextBox.Text = openFileDialog.FileName;
-                Im = openFileDialog.FileName;
+                buf = openFileDialog.FileName;
                 BitmapImage bi3 = new BitmapImage();
                 bi3.BeginInit();
-                bi3.UriSource = new Uri(Im, UriKind.Absolute);
+                bi3.UriSource = new Uri(openFileDialog.FileName, UriKind.Absolute);
                 bi3.EndInit();
                 BeforeIm.Source = bi3;
+            }
+        }
+
+        private void isCont_Checked(object sender, RoutedEventArgs e)
+        {
+            if(Im!="")
+            {
+                FileInfo f = new FileInfo(Im);
+                BitmapImage bi3 = new BitmapImage();
+                bi3.BeginInit();
+                if (!(bool)isCont.IsChecked)
+                    bi3.UriSource = new Uri(System.IO.Directory.GetCurrentDirectory() + "\\out_img\\" + f.Name, UriKind.Absolute);
+                else
+                    bi3.UriSource = new Uri(System.IO.Directory.GetCurrentDirectory() + "\\countours_img\\" + f.Name, UriKind.Absolute);
+                bi3.EndInit();
+                AfterIm.Source = bi3;
             }
         }
     }

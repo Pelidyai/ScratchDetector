@@ -125,6 +125,7 @@
         <Grid Name="InnerGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,40,10,10">
             <Border CornerRadius="30" Background="#FF2F3136" Margin="0,0,0,-0.4">
             </Border>
+            <CheckBox Name ="isCont" Foreground="#CC888EFF" Content="Отобразить контуры лопатки" HorizontalAlignment="Left" Height="21" Margin="34,5,0,0" VerticalAlignment="Top" Width="187" Click="isCont_Checked"/>
             <Button Content="Обзор" Name="Observe" HorizontalAlignment="Left" Height="27" Margin="586.8,443,0,0" VerticalAlignment="Top" Width="205" Click="Observe_Click"/>
 
             <Label Name="ChanelUrl" Content="Изображение" HorizontalAlignment="Left" Margin="10,422.4,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.469,-2.984"/>

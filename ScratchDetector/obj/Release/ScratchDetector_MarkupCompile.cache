@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Debug\
+D:\PickAim\Projects\ScratchDetector\ScratchDetector\obj\Release\
 ScratchDetector
 none
 false
-DEBUG;TRACE
+TRACE
 D:\PickAim\Projects\ScratchDetector\ScratchDetector\App.xaml
 11151548125
 
-61434861427
+5-2017746502
 10-129404055
 MainWindow.xaml;
 

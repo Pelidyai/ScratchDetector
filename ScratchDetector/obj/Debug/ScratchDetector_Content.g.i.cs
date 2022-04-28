@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/cross.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/line.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("free-icon-lightbulb-702797.ico")]
 
 
